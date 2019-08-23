@@ -8,6 +8,6 @@
 
 This task is a requirement for completing the HNG 6.0 pre-internship program. The idea is to create a static page with just HTML.
 
-## Link to lucid post
+## Link to twitter post
 
-https://lucid.blog/stgodstar/post/1566551705
+https://twitter.com/sengodstar/status/1164454108595675137?s=20
