@@ -10,4 +10,4 @@ This task is a requirement for completing the HNG 6.0 pre-internship program. Th
 
 ## Link to lucid post
 
-
+https://lucid.blog/stgodstar/post/1566551705
