@@ -46,3 +46,65 @@ nav {
   float: right;
   padding: 20px;
 }
+
+#form-con {
+  width: 90%;
+  margin: auto;
+}
+
+#form-header {
+  text-align: center;
+  padding: 0.2em;
+}
+
+form {
+  width: 90%;
+  margin: auto;
+}
+
+.inp-div {
+  width: 90%;
+  margin: auto;
+}
+
+input {
+  width: 90%;
+  padding: 0.5em;
+  margin: 0.5em;
+  border-radius: 5px;
+}
+
+textarea {
+  width: 90%;
+  padding: 0.5em;
+  margin: 0.5em;
+  resize: vertical;
+  border-radius: 5px;
+}
+
+input:hover {
+  border: 1px solid #000;
+}
+
+textarea:hover {
+  border: 1px solid #000;
+}
+
+.btn-div {
+  width: 50%;
+  background-color: slateblue;
+}
+
+#btn {
+  padding: 0.5em;
+  margin: 0.5em;
+  width: 80%;
+  font-size: 1.5em;
+  border-radius: 5px;
+}
+
+#btn:hover {
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+}
