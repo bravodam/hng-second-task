@@ -2,7 +2,6 @@
 
 ## Sreenshot
 
-![ScreenShot](https://lucid.blog/storage/stgodstar/images/img-xza91iz1l4.png)
 
 ## Description
 
