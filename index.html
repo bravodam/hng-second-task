@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <header>
@@ -108,7 +109,8 @@
     </div>
     <form action="" id="form">
       <div class="name-div inp-div">
-        <input type="text" id="name" class="invalid" placeholder="Your Fullname" required>
+        <input type="text" id="name" max="4" class="invalid" placeholder="Your Fullname" required>
+        <p class="err" id="nameErr"></p>
       </div>
       <div class="email-div inp-div">
         <input type="email" id="email" class="invalid" placeholder="test@example.com" required>
@@ -118,13 +120,15 @@
       </div>
       <div class="message-div inp-div">
         <textarea name="" id="message" cols="30" rows="5"  placeholder="Your Message" required></textarea>
+        <p class="err" id="messageErr"></p>
       </div>
       <div class="btn-div inp-div">
-        <button id="btn">Send</button>
+        <input type="submit" name="" id="btn">
+        <!-- <button id="btn" >Send<i class="fa fa-ban" aria-hidden="true"></i></button> -->
       </div>
     </form>
   </div>
 
-  <script src="is/app.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>

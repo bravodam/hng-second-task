@@ -108,10 +108,25 @@ textarea:hover {
   color: #fff;
 }
 
+#btn:disabled {
+
+}
+
 .invalid {
   border-left: 5px solid red;
 }
 
 .invalid:hover {
   border-left: 5px solid red;
+}
+
+.hide {
+  display: none;
+}
+
+.err {
+  padding: 0px 10px;
+  margin-top: 0px;
+  color: red;
+  font-style: italic;
 }

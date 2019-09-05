@@ -1,40 +1,40 @@
 console.log('connected')
 
 const form = document.getElementById('form');
-const inputs = document.querySelectorAll('input');
 
-const nameField = document.getElementById('name')
-const emailField = document.getElementById('email')
-const titleField = document.getElementById('title')
-const messageField = document.getElementById('message')
+const name = document.getElementById('name');
+const message = document.getElementById('message');
+const btn = document.getElementById('btn');
+const nameErr = document.getElementById('nameErr');
+const messageErr = document.getElementById('messageErr');
 
 // Prevent submission of empty form in old browsers
 
-const validate = (name, email, title, message, e) => {
 
-  if (name.value === '' || email.value === '' || title.value === '' || message.value === '') {
-    e.preventDefault();
-    return false;
-  } else {
-    return true;
+form.addEventListener('submit', (event) => {
+  if (name.value.length < 4) {
+    nameErr.innerHTML = 'Name should be atleast 4 characters long.'
   }
-}
 
-
-form.addEventListener('submit', (e) => {
-  validate(nameField, emailField, titleField, messageField, e)
+  if (message.value.length < 20) {
+    messageErr.innerHTML = 'Message should be atleast 20 characters long.'
+  }
+  event.preventDefault();
 });
 
-
-let arr = Array.from(inputs);
-
-arr.forEach((input) => {
-  input.addEventListener('change', (e) => {
-    console.log('hi');
-
-    if (e.target.value !== '') {
-      e.target.classList.remove('invalid');
-    }
-  });
+name.addEventListener('blur', (e) => {
+  if (e.target.value.length > 3) {
+    nameErr.classList.add('hide');
+  } else {
+    nameErr.classList.remove('hide');
+  }
 });
-console.log(arr);
+
+message.addEventListener('blur', (e) => {
+  if (e.target.value.length > 19) {
+    messageErr.classList.add('hide');
+  } else {
+    messageErr.classList.remove('hide');
+  }
+});
+
